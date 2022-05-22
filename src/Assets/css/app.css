@@ -1,0 +1,266 @@
+body {
+  overflow-y: hidden !important;
+}
+/*  */
+.menuNavigatorArrowAndIndicator {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: white;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorSecond);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 20px;
+}
+.menuNavigatorArrowAndIndicator i {
+  font-size: 25px;
+  color: var(--colorPrincipal);
+  cursor: pointer;
+}
+.menuNavigatorArrowAndIndicator section span {
+  color: var(--colorPrincipal);
+  margin: 0 5px;
+}
+.menuNavigatorArrowAndIndicator section b {
+  margin: 0 5px;
+}
+.fixedAsideNav {
+  width: 80px;
+  background-color: var(--colorSecond);
+  /* border-right: solid 1px rgb(36, 33, 33); */
+  box-shadow: black 0px 1px 3px, black 0px 1px 2px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 99999999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.fixedAsideNav i {
+  padding: 10px 5px;
+  cursor: pointer;
+}
+.fixedAsideNav section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fan-menuBtn {
+  background-color: var(--ob2);
+}
+.fan-menuBtn i {
+  font-size: 30px;
+  transition: all 0.5s;
+}
+.menuBtnHasClick {
+  color: var(--colorPrincipal);
+}
+.fixedAsideNav section:last-child {
+  width: 80%;
+  margin: 0 auto;
+  color: var(--cwd4);
+}
+.fixedAsideNav section:last-child i {
+  font-size: 28px;
+}
+/*  */
+
+.container {
+  min-height: 100vh;
+  max-height: 150vh;
+  display: flex;
+  position: relative;
+}
+.containerHided {
+  height: 100vh;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--colorPrincipal);
+  background-image: url("../img/t26.png");
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.chNavLink {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.chNavLink a {
+  font-weight: bold;
+  color: white;
+  font-size: 4vh;
+  letter-spacing: 2px;
+}
+.containerHided a:hover {
+  color: var(--colorSecond);
+}
+.containerVisible {
+  min-height: 100vh;
+  max-height: 1000vh;
+  position: absolute;
+  left: 80px;
+  z-index: 101;
+  width: calc(100% - 80px);
+  /* background-image: url("../img/t21.png"); */
+  background-color: var(--colorSecond);
+  transform-origin: 0% 100%;
+  transition: all 0.5s ease 0.1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerVisibleRotate {
+  transform: rotate(35deg);
+}
+
+.pageHeader a {
+  color: white;
+}
+.pageHeader {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 10vh;
+}
+/* Debut partie logo */
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo a {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  color: var(--colorPrincipal) !important;
+  font-weight: bold;
+  font-size: 30px;
+}
+/* Fin logo */
+
+/*  */
+.navBtn {
+  color: white;
+}
+.asideNavActive {
+  color: var(--colorSecond) !important;
+  position: relative;
+  transition: all 0.5s;
+}
+aside a {
+  color: white;
+}
+.asideNavActive::after {
+  content: "";
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: var(--colorSecond);
+}
+
+.partTitle {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.homePart,
+.aboutPart,
+.contactPart,
+.skillsPart,
+.workPart {
+  height: 90vh;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+  scrollbar-color: var(--ob2) var(--ow2);
+  scrollbar-width: thin;
+}
+.aboutPart h1,
+.contactPart h1,
+.skillsPart h1,
+.workPart h1 {
+  color: var(--colorPrincipal);
+  font-size: 2em;
+}
+.aboutPart > :last-child,
+.contactPart > :last-child,
+.skillsPart > :last-child,
+.workPart > :last-child {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 512px) {
+  .menuNavigatorArrowAndIndicator {
+    right: 5px;
+    top: initial;
+    bottom: 5px;
+  }
+  .menuNavigatorArrowAndIndicator i {
+    font-size: 25px;
+  }
+  .menuNavigatorArrowAndIndicator section span {
+    margin: 0 4px;
+  }
+  .menuNavigatorArrowAndIndicator section b {
+    margin: 0 4px;
+  }
+
+  .aboutPart,
+  .contactPart,
+  .skillsPart,
+  .workPart {
+    /* background-color: violet !important; */
+    /* margin: 50px auto 0 auto !important; */
+    padding: 10px 0;
+  }
+
+  /*  */
+  .fixedAsideNav {
+    width: 50px;
+  }
+  .fan-menuBtn i {
+    font-size: 25px;
+  }
+  .fixedAsideNav section:last-child i {
+    font-size: 22px;
+  }
+  /*  */
+  /* aside {
+    display: none;
+  } */
+
+  /*  */
+  .container {
+    max-height: 400vh;
+  }
+  .chNavLink {
+    width: 70%;
+  }
+  .containerVisible {
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+  .containerVisibleRotate {
+    transform: rotate(25deg);
+  }
+  /*  */
+}

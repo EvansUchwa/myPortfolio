@@ -1,0 +1,66 @@
+.homePart {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 90%;
+  /* background-color: pink; */
+}
+.hp-presentation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  overflow: hidden;
+}
+.hp-presentation div {
+  width: 50%;
+}
+.hp-presentation div section {
+  /* background-color: yellow; */
+}
+.hp-presentation h1 {
+  font-size: 8vh;
+  /* background-color: tomato; */
+}
+.hp-presentation b {
+  font-size: 5vh;
+  color: var(--color4);
+  /* background-color: turquoise; */
+}
+.hpp-contactBtn {
+  /* background-color: tomato; */
+}
+.hpp-contactBtn a {
+  background-color: var(--colorPrincipal);
+  margin-top: 10px;
+  margin-right: 10px;
+  color: white;
+  padding: 10px 25px;
+  border: solid 1px var(--colorPrincipal);
+}
+.hpp-contactBtn a:hover {
+
+  background-color: transparent;
+  color: var(--colorPrincipal);
+}
+.hp-presentation img {
+  object-fit: cover;
+  width: 50%;
+  /* background-color: violet; */
+}
+
+@media screen and (max-width: 512px) {
+  .hpp-contactBtn a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  .hp-presentation img {
+    margin-top: 150px;
+  }
+}

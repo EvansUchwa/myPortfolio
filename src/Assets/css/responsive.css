@@ -1,0 +1,58 @@
+@media screen and (max-width: 512px) {
+	aside
+	{
+		display: none !important;
+	}
+	.pageHeader
+	{
+		height: 12vh;
+	}
+	div.phHambuger
+	{
+		height: 8vh;
+		width: 8vh;
+	}
+	.pageContent > div
+	{
+		width: 90% !important;
+	}
+	.pageContent div.pcDefault
+	{
+
+	}
+
+	/* Competence */
+.sl-webFrameworkAndLibrary{
+	order: 3;
+}
+.sl-other{
+	order: 4;
+}
+	.sl-tools,.sl-webLanguage,.sl-webFrameworkAndLibrary,.sl-other
+	{
+		width: 100%;
+	}
+
+	/*  */
+
+	/*  */
+	#pcw-workList div:nth-child(1),#pcw-workList div:nth-child(3)
+	{
+		display: none;
+	}
+	.s-active
+	{
+		width: 100% !important;
+	}
+
+	.pch-myPresentation img
+	{
+		display: none;
+	}
+	/*Pour la partie contact  */
+	.pcc-Infos
+	{
+		width: 90%;
+		/* background-color: grey; */
+	}
+}
