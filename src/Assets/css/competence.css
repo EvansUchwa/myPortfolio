@@ -62,7 +62,7 @@ div.skillList h3 {
   margin: 0 0 10px 0;
 }
 
-.sl-tools {
+/* .sl-tools {
   order: 1;
 }
 .sl-webLanguage {
@@ -73,7 +73,7 @@ div.skillList h3 {
 }
 .sl-other {
   order: 3;
-}
+} */
 .sl-tools,
 .sl-webLanguage,
 .sl-webFrameworkAndLibrary,

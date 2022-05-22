@@ -54,7 +54,7 @@ const Competences = () => {
               PHP
             </section>
             <section>
-              <p>Node Js</p>
+              <p>Node Js/Express</p>
             </section>
 
           </div>
@@ -62,14 +62,15 @@ const Competences = () => {
           <div className="sl-webFrameworkAndLibrary">
             <i className="mdi mdi-file-code-outline"></i>
             <h3>
-              Framework et Librairie
+              Framework, Librairie et Technologie
             </h3>
             <section>Bootstrap /Material UI</section>
             <section>Jquerry </section>
-            <section>React Js /Redux/Apollo Js</section>
+            <section>React Js /Redux</section>
             <section>Vue Js /Vue X</section>
-            <section>Express</section>
-            <section>GraphQL</section>
+            <section>Node Js/Express</section>
+            <section>GraphQL/Apollo Js</section>
+            <section>Next JS</section>
           </div>
 
           <div className="sl-other">
