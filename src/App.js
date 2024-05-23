@@ -1,14 +1,7 @@
-import "./Assets/css/anim.css";
-import "./Assets/css/index.css";
-import "./Assets/css/app.css";
+import "./Assets/css/index.scss";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Accueil from "./Routes/Accueil";
-import Contact from "./Routes/Contact";
-import Apropos from "./Routes/Apropos";
-import { AsideNav, MenuNavigatorArrowAndIndicator, TopNav } from "./GlobalComponents/Nav";
-import "./Assets/css/materialdesignicons.min.css";
-import Travaux from "./Routes/Travaux";
-import Competences from "./Routes/Competences";
+import { AsideNav, MenuNavigatorArrowAndIndicator, TopNav } from "./uikits/Nav";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -43,10 +36,6 @@ function App() {
           <TopNav />
           <Routes>
             <Route path="/" element={<Accueil />} />
-            <Route path="/Apropos" element={<Apropos />} />
-            <Route path="/Travaux" element={<Travaux />} />
-            <Route path="/Competences" element={<Competences />} />
-            <Route path="/Contact" element={<Contact />} />
           </Routes>
         </div>
       </div>

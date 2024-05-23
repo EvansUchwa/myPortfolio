@@ -1,0 +1,43 @@
+/* A propos */
+.home-about {
+  margin: 50px auto;
+  width: 90%;
+  color: white;
+  &>div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  // background-color: var(--colorPrincipal);
+}
+.abp-Text {
+  color: white;
+  margin: 20px 0 20px 0;
+  width: 30%;
+  p {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  a{
+    padding: 10px 15px;
+    background-color: var(--colorPrincipal);
+    color: var(--colorBg);
+  }
+}
+
+
+.abpImg {
+  width: 30%;
+  display: flex;
+  img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 512px) {
+  .abp-Text {
+    width: 90%;
+  }
+  .abpImg {
+    margin: auto;
+  }
+}
