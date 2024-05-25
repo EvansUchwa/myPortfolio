@@ -52,8 +52,8 @@ h1,.partTitle{
   display: flex;
   font-weight: bold;
   color: white;
-  padding: 20px 20px;
-  font-size: 30px;
+  padding: 20px;
+  font-size: 3vh;
   &:hover {
     color: var(--primaryColor);
   }
@@ -78,28 +78,28 @@ h1,.partTitle{
   transform: rotate(30deg) scale(0.8);
 }
 
-.pageHeader a {
-  color: white;
-}
 .pageHeader {
   display: flex;
   justify-content: space-between;
   padding: 0 5%;
   height: 10vh;
+  a {
+    color: white;
+  }
 }
 /* Debut partie logo */
 .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.logo a {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  color: var(--primaryColor) !important;
-  font-weight: bold;
-  font-size: 30px;
+  a {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: var(--primaryColor) !important;
+    font-weight: bold;
+    font-size: 30px;
+  }
 }
 /* Fin logo */
 
@@ -129,17 +129,6 @@ aside a {
 
 @media screen and (max-width: 512px) {
 
-  /*  */
-  .chNavLink {
-    width: 70%;
-  }
-  .containerVisible {
-
-  }
-  .containerVisibleRotate {
-    transform: rotate(3deg);
-  }
-  /*  */
 }
 
 
