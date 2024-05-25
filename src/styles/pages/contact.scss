@@ -148,11 +148,11 @@ form{
 
 
 @media screen and (max-width: 512px) {
-  .contactPart {
+  .home-contact {
     width: 95%;
-  }
-  .contactPart section{
-    width: 95%;
-    margin: 25px auto;
-    }
+    section{
+      width: 95%;
+      margin: 25px auto;
+      }
+  } 
 }

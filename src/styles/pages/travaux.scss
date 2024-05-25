@@ -68,15 +68,9 @@
 @media screen and (max-width: 512px) {
   .wp-workList {
     .workCard{
-      padding-bottom: 100px;
-      &::after{
-        // width: 100%;
-      }
-      img{
-        // width: 100%;
-      }
+      min-height: 60vh;
       section{
-     width: 50%;
+     width: 85%;
       }
     }
   }

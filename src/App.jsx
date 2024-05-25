@@ -1,5 +1,5 @@
-import "./assets/css/index.scss";
-import "./assets/css/slick.min.css";
+import "./styles/index.scss";
+import "./styles/slick.min.css";
 
 import { Route, Routes } from "react-router-dom";
 import Accueil from "./routes/Accueil";
