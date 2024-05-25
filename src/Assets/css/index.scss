@@ -10,12 +10,10 @@
 
 
 :root {
-   --colorPrincipal: #cda17c;
+  --bgColor: #0A0D15;
+   --primaryColor: #9C6E5B;
   --pbcD1: #121A33;
-  --colorSecond: #121A33; 
-  // --colorPrincipal: #121A33;
-  // --pbcD1: #5D3B28;
-  // --colorSecond: #5D3B28;
+  --secondaryColor: #121A33; 
   --color3: #cdd1cc;
   --color4: #6e6d6e;
   --ob2: rgba(0, 0, 0, 0.2);
@@ -79,10 +77,11 @@ body,
 html {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: Poppins-Medium;
-  background-color: var(--principalBgColor);
   overflow-x: hidden;
 }
 a {
@@ -97,7 +96,7 @@ label {
 h1,
 b,
 h2,
-h3 p {
+h3,h4 p {
   margin: 0;
   padding: 0;
 }
@@ -113,7 +112,7 @@ textarea {
 
 /* POur les button du site */
 button {
-  background-color: var(--colorPrincipal);
+  background-color: var(--primaryColor);
   color: white;
   padding: 10px 15px;
   position: relative;
@@ -134,7 +133,7 @@ button svg rect {
   fill: transparent;
 }
 button svg rect {
-  stroke: var(--colorPrincipal);
+  stroke: var(--primaryColor);
   stroke-width: 4;
   transition: 1s;
   stroke-dasharray: 400;
@@ -151,4 +150,9 @@ img {
 }
 #btn {
   display: none;
+}
+ul,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

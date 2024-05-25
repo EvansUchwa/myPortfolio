@@ -1,8 +1,4 @@
 @media screen and (max-width: 512px) {
-	aside
-	{
-		display: none !important;
-	}
 	.pageHeader
 	{
 		height: 12vh;
@@ -22,16 +18,6 @@
 	}
 
 	/* Competence */
-.sl-webFrameworkAndLibrary{
-	order: 3;
-}
-.sl-other{
-	order: 4;
-}
-	.sl-webLanguage,.sl-webFrameworkAndLibrary,.sl-other
-	{
-		width: 100%;
-	}
 
 	/*  */
 

@@ -5,69 +5,95 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--secondaryColor);
   width: 100%;
   &>div{
-    margin: 50px auto;
-  
+    // margin: 50px auto;
   }
   &>div:not(.home-banner){
     h1{
       margin-bottom: 25px;
-      display: inline-block;
-      &::after{
-        content: '';
-        position: absolute;
-        background-color: var(--colorPrincipal);
-        width: 110%;
-        height: 50px;
-        left: -5%;
-        transform: rotate(-3deg);
-        z-index: -1;
-      }
+      color: var(--primaryColor);
     }
   }
   .home-banner{
-    width: 90%;
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    // background-color: hotpink;
   }
-  .hp-presentation {
+  .hb-presentation {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    position:  relative;
-    div {
+    position: relative;
+    
+    &::after{
+      content: '';
+      position: absolute;
+      background-color: rgba($color: white, $alpha: 0.5);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+
+      height: 100%;
+      width: 100%;
+    }
+    &>section {
       width: 50%;
+      z-index: 21;
     }
-    h1 {
-      font-size: 8vh;
-    }
-    b {
-      font-size: 5vh;
-    }
-    img {
-      object-fit: cover;
-      width: 50%;
-      border-radius: 200px;
-    }
-  }
-  .hpp-contactBtn {
-    a {
-      background-color: var(--colorPrincipal);
-      margin-top: 10px;
-      margin-right: 10px;
-      color: white;
-      padding: 10px 25px;
-      border: solid 1px var(--colorPrincipal);
-      border-radius: 50px;
-      &:hover {
+    .hbp-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   
-        background-color: transparent;
-        color: var(--colorPrincipal);
+      
+      h1,b,section{
+       
+        width: 90%;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 8vh;
+      }
+      b {
+        font-size: 5vh;
       }
     }
+    .hbp-image{
+
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      &::after{
+        content: '';
+        position: absolute;
+       background-color: var(--secondaryColor);
+       clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        left: 0;
+      }
+      img {
+        margin: auto;
+        width: 80%;
+        border-radius: 50px;
+        height: 90%;
+        object-position: 0% 20%;
+      }
+    }
+  
+
+  }
+  .hpp-contactBtn {
+    display: flex;
+   gap: 0 20px;
   }
   
 }
@@ -82,12 +108,20 @@
     font-size: 14px;
     padding: 8px 15px;
   }
-  .hp-presentation div {
-  width: 100%;
-}
-  .hp-presentation img {
-    top: -150px;
-    right:  0;
-    position: absolute;
+  .hb-presentation {
+    // flex-direction: column-reverse;
+    &>section {
+      width: 100% !important;
+    }
+    .hbp-text{
+   order: 2;
+    }
+    .hbp-image{
+      order: 1;
+      height: 60vh !important;
+      img {
+        
+      }
+    }
   }
 }

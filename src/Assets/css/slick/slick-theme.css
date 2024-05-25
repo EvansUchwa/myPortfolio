@@ -52,7 +52,7 @@
 .slick-next:focus {
   color: var(--ob4) !important;
   outline: none;
-  background: var(--colorPrincipal);
+  background: var(--primaryColor);
   /* background: ; */
 }
 .slick-prev:hover:before,
@@ -75,7 +75,7 @@
   line-height: 25px;
 
   opacity: 0.75;
-  color: var(--colorPrincipal);
+  color: var(--primaryColor);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

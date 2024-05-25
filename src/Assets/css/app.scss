@@ -1,3 +1,6 @@
+$primaryColor: #9C6E5B;
+$secondaryColor: #121A33;
+ 
 body {
 }
 h1,.partTitle{
@@ -8,85 +11,27 @@ h1,.partTitle{
 }
 
 /*  */
-.menuNavigatorArrowAndIndicator {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  color: white;
-  z-index: 9999999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--colorSecond);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  border-radius: 20px;
-}
-.menuNavigatorArrowAndIndicator i {
-  font-size: 25px;
-  color: var(--colorPrincipal);
-  cursor: pointer;
-}
-.menuNavigatorArrowAndIndicator section span {
-  color: var(--colorPrincipal);
-  margin: 0 5px;
-}
-.menuNavigatorArrowAndIndicator section b {
-  margin: 0 5px;
-}
 .fixedAsideNav {
-  width: 80px;
-  background-color: var(--colorSecond);
-  /* border-right: solid 1px rgb(36, 33, 33); */
+  width: 60px;
+  height: 60px;
+  border-radius: 80px;
+  background-color: var(--primaryColor);
+  cursor: pointer;
   box-shadow: black 0px 1px 3px, black 0px 1px 2px;
   position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  z-index: 99999999999;
+  top: 20px;
+  left: 20px;
+  z-index: 999999999999999999;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
   color: white;
 }
-.fixedAsideNav i {
-  padding: 10px 5px;
-  cursor: pointer;
-}
-.fixedAsideNav section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.fan-menuBtn {
-  padding: 25px 0;
-  cursor: pointer;
-  svg {
-    font-size: 30px;
-    transition: all 0.5s;
-  }
-  &.menuBtnHasClick {
-    color: var(--colorPrincipal);
-  }
-}
 
-.fixedAsideNav section:last-child {
-  width: 80%;
-  margin: 0 auto;
-  color: var(--cwd4);
-}
-.fixedAsideNav section:last-child i {
-  font-size: 28px;
-}
 /*  */
 
-.container {
-  min-height: 100vh;
-  max-height: 150vh;
+.container { 
   display: flex;
   position: relative;
 }
@@ -94,46 +39,45 @@ h1,.partTitle{
   height: 100vh;
   z-index: 100;
   width: 100%;
-  background-color: var(--colorPrincipal);
-  background-image: url("../img/t26.png");
+  background-color: var(--secondaryColor);
   display: flex;
   flex-direction: column;
-  padding: 10px 0 0 10px;
-  display: flex;
-  flex-direction: column;
+  position: fixed;
+  z-index: 1000;
 }
 .chNavLink {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-}
-.chNavLink a {
+ flex-wrap: wrap;
+ span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0;
   font-weight: bold;
   color: white;
   font-size: 4vh;
   letter-spacing: 2px;
+  &:hover {
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+  }
+  cursor: pointer;
 }
-.containerHided a:hover {
-  color: var(--colorSecond);
 }
 .containerVisible {
-  min-height: 100vh;
-  max-height: 1000vh;
-  position: absolute;
-  left: 80px;
-  z-index: 101;
-  width: calc(100% - 80px);
-  /* background-image: url("../img/t21.png"); */
-  background-color: var(--colorSecond);
-  transform-origin: 0% 100%;
-  transition: all 0.5s ease 0.1s;
+  z-index: 10100000;
+  width: 100%;
+  background-color: white;
+  transition: all 0.7s ease 0.1s;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .containerVisibleRotate {
-  transform: rotate(35deg);
+  transform: translateX(100vw);
 }
 
 .pageHeader a {
@@ -156,7 +100,7 @@ h1,.partTitle{
   margin: auto;
   display: flex;
   align-items: center;
-  color: var(--colorPrincipal) !important;
+  color: var(--primaryColor) !important;
   font-weight: bold;
   font-size: 30px;
 }
@@ -167,7 +111,7 @@ h1,.partTitle{
   color: white;
 }
 .asideNavActive {
-  color: var(--colorSecond) !important;
+  color: var(--secondaryColor) !important;
   position: relative;
   transition: all 0.5s;
 }
@@ -182,63 +126,61 @@ aside a {
   position: absolute;
   width: 10px;
   height: 1px;
-  background-color: var(--colorSecond);
+  background-color: var(--secondaryColor);
 }
 
 
 @media screen and (max-width: 512px) {
-  .menuNavigatorArrowAndIndicator {
-    right: 5px;
-    top: initial;
-    bottom: 5px;
-  }
-  .menuNavigatorArrowAndIndicator i {
-    font-size: 25px;
-  }
-  .menuNavigatorArrowAndIndicator section span {
-    margin: 0 4px;
-  }
-  .menuNavigatorArrowAndIndicator section b {
-    margin: 0 4px;
-  }
-
-  .aboutPart,
-  .contactPart,
-  .skillsPart,
-  .workPart {
-    /* background-color: violet !important; */
-    /* margin: 50px auto 0 auto !important; */
-    padding: 10px 0;
-  }
 
   /*  */
-  .fixedAsideNav {
-    width: 50px;
-  }
-  .fan-menuBtn i {
-    font-size: 25px;
-  }
-  .fixedAsideNav section:last-child i {
-    font-size: 22px;
-  }
-  /*  */
-  /* aside {
-    display: none;
-  } */
-
-  /*  */
-  .container {
-    max-height: 400vh;
-  }
   .chNavLink {
     width: 70%;
   }
   .containerVisible {
-    left: 50px;
-    width: calc(100% - 50px);
+
   }
   .containerVisibleRotate {
-    transform: rotate(25deg);
+    transform: rotate(3deg);
   }
   /*  */
 }
+
+
+.btnStyle {
+      background-color: var(--primaryColor);
+      margin-top: 10px;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 50px;
+      &:hover {
+        border: solid 1px var(--primaryColor);
+        background-color: transparent;
+        color: var(--primaryColor);
+      }
+      &.btnOulineStyle {
+        background-color: transparent;
+        border: solid 1px var(--primaryColor);
+        color:  var(--primaryColor);
+        padding: 10px 25px;
+        border-radius: 50px;
+        &:hover {
+          background-color: var(--primaryColor);
+          color: white;
+        }
+      }
+}
+
+  h1.sectionTitle{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    sup{
+      white-space: nowrap;
+      position: absolute;
+      color: #9C6E5B30;
+      font-size: 60px;
+      width: 120%;
+      left: 0;
+      top: -50%;
+    }
+  }
