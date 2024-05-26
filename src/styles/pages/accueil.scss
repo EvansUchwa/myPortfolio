@@ -8,7 +8,7 @@
   color: var(--secondaryColor);
   width: 100%;
   &>div{
-    // margin: 50px auto;
+
   }
   &>div:not(.home-banner){
     h1{
@@ -20,7 +20,6 @@
     width: 100%;
     margin: auto;
     min-height: 100vh;
-    // background-color: hotpink;
   }
   .hb-presentation {
     width: 100%;
@@ -64,7 +63,7 @@
       }
     }
     .hbp-image{
-
+      
       height: 100vh;
       overflow: hidden;
       position: relative;
@@ -85,7 +84,13 @@
         width: 80%;
         border-radius: 50px;
         height: 90%;
-        object-position: 0% 20%;
+        transform: rotate(-4deg);
+        cursor: pointer;
+        transition: all .5s;
+        &:hover{
+          transform: initial;
+        }
+        // object-position: 0% 20%;
       }
     }
   

@@ -10,7 +10,10 @@ const HomeSkills = () => {
         { name: 'React', img: 'react.png' },
         { name: 'Next Js', img: 'next.png' },
         { name: 'Node Js', img: 'node.png' },
-
+        { name: 'Mongo Db', img: 'mongo.png' },
+        { name: 'MySql', img: 'mysql.webp' },
+        { name: 'Vercel', img: 'vercel.webp' },
+        { name: 'Heroku', img: 'heroku.webp' },
     ]
     return (
         <div className="home-skill">

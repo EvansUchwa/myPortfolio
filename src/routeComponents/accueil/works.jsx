@@ -1,4 +1,4 @@
-import { Button, SectionTitle } from '../../uikits/other';
+import { Button, LinkButton, SectionTitle } from '../../uikits/other';
 import Slider from 'react-slick';
 
 const HomeProjects = () => {
@@ -19,92 +19,76 @@ const HomeProjects = () => {
     };
     const travaux = [
         {
+            name: 'VidCensor',
+            description: "Un projet en cours de développement consistant en un mini SaaS. Il vise à permettre aux YouTubers et à leurs monteurs de censurer efficacement leurs vidéos grâce à l'utilisation de l'IA.",
+            img: 'vidcensor.webp',
+            link: 'https://censor-vid.vercel.app/'
+        },
+        {
             name: 'France-Assist',
-            description: "Une refonte d'une application web pour un client",
+            description: "C'est avec une certaine fierté que j'ai contribué au développement de ce Saas pour un client. Cette application web offre aux Français la possibilité d'effectuer des simulations en ligne pour évaluer leurs droits aux aides sociales.",
             img: 'franceassist.webp',
             link: 'https://france-assist.fr'
         },
         {
             name: 'Cleopatra',
-            description: "Un site de rencontre pour adulte pour un client du Canada,la plateforme compotabilise a ce jour 4000 utilisateur dont 500 actifs",
+            description: "Une plateforme de rencontre pour adultes développée pour un client basé au Canada. Elle compte actuellement 4000 utilisateurs, dont 500 actifs.",
             img: 'cleopatra.webp',
-            link: 'https://france-assist.fr'
+            link: 'https://cleopatra.sx'
         },
         {
             name: 'Dofra',
-            description: "Une application web pour permettre aux proffesionnelle du demenagement et du transpiort de biens en France de pouvoir trouver des clients",
+            description: "Une application web visant à aider les professionnels du déménagement et du transport de biens en France à trouver des clients.",
             img: 'dofra.webp',
-            link: 'https://france-assist.fr'
+            link: 'https://dofra.fr'
         },
         {
             name: 'Refi',
-            description: "Une application web pour le compte d'un client qui a son entreprise immobiliere proposant des services d'assistance immobilier,la plateforme facilite les interaction entre les clients et l'entreprise de mon client",
+            description: "Une plateforme web développée pour une entreprise immobilière. Elle facilite les interactions entre les clients et l'entreprise du client.",
             img: 'refi.webp',
-            link: 'https://france-assist.fr'
+            link: 'https://refi.bj'
         },
         {
             name: "MinanKon Martial Arts",
-            description: "Un site vitrine pour un client coach de Taekwondo", img: 'maxCoach.webp',
-            link: 'https://max-coach.vercel.app'
+            description: "Un site vitrine conçu pour un coach de Taekwondo.",
+            img: 'maxCoach.webp',
+            link: 'https://max-coach-six.vercel.app/'
         },
         {
             name: 'DidaFire',
-            description: "Un site vitrine pour un client pour un client coach de développement personnel", img: 'didaFire.webp',
+            description: "Un site vitrine créé pour un coach en développement personnel.",
+            img: 'didaFire.webp',
             link: 'https://didafir.vercel.app'
         },
         {
-            name: 'Univeran',
-            description: 'Un de mes nombreux Premier projet HTML/CSS ', img: 's7.webp',
-            link: 'https://evansuchwa.github.io/UnivearnTemplate/connexion.html'
-        },
-
-        {
             name: 'Todo List App',
-            description: 'Todo list app(Premier projet) ',
-            img: 's1.webp', link: 'https://evans-todoapp-reacft.netlify.app'
+            description: "Mon tout premier projet, une application de gestion de tâches basique.",
+            img: 's1.webp',
+            link: "https://to-do-app-react-snowy.vercel.app/"
         },
         {
             name: 'Portfolio',
-            description: 'Mon portfolio',
-            img: 's8.webp', link: 'https://evansdsv-portfolio.netlify.app/'
+            description: "Mon propre portfolio en ligne.",
+            img: 's8.webp',
+            link: 'https://edsv-portfolio.vercel.app/'
         },
-        {
-            name: 'AnimStore',
-            description: 'Mini E-commerce sur les vêtements pour parachever ma formation React ',
-            img: 's2.webp', link: 'https://evans-react-ecommerce.netlify.app'
-        },
-        // {
-        //     description: 'Wesh - En ligne - Mini E-commerce sur les montre,mon Premier projet Vue Js ',
-        //     img: 'wesh.webp',
-        //     link: 'https://wesh-vue.netlify.app'
-        // },
-        // {
-        //     description: 'NoahStore - -En ligne - Petit E-commerce avec une base de donnée Mysql pour parachever ma formation vue Js ',
-        //     img: 'noahStore.webp',
-        //     link: 'https://noah-ecommerce-vueJs.netlify.app'
-        // },
         {
             name: 'Tags-concept',
-            description: "Un site vitrine pour un client des USA",
+            description: "Un site vitrine réalisé pour un client basé aux États-Unis.",
             img: 'tagConcept.webp',
-            link: 'https://france-assist.fr'
+            link: 'https://christian-startup-vitrine.vercel.app/'
         },
         {
-            name: 'Stuud',
-            description: 'En développement- Un mini reseau social pour le partage de cours pour les etudiant',
-            img: 'stuud.webp', link: 'https://stuud-app.herokuapp.com/'
+            name: 'Card Design Simulator',
+            description: "Un simulateur en ligne permettant de personnaliser des cartes de visite.",
+            img: 'cardSimulator.webp',
+            link: 'https://kloo-card-simulator.vercel.app/'
         },
         {
-            name: 'Wiki-Movie',
-            description: "Un mini site pour ajouter/modifier/liker/disliker/commenter des films," +
-                "c'est le projet parachevant ma formation GraphQL/Apollo Js",
-            img: 'graphQl.webp', link: 'https://wiki-movies.herokuapp.com/'
-        },
-        {
-            name: 'Pizza-Pedia',
-            description: "Une sorte de mini E-commerce de achat/livraison de pizza avec un espace admin pour le restaurateur/vendeur." +
-                "c'est le projet parachevant ma formation Next Js",
-            img: 'pizzapedia.webp', link: 'https://pizza-pedia.netlify.app/'
+            name: 'Inperfect',
+            description: "Une reproduction avec animations d'un site vitrine Webflow, réalisée pour le plaisir.",
+            img: 'inperfect.webp',
+            link: 'https://inperfect-test.vercel.app/'
         }
     ];
 
@@ -126,7 +110,9 @@ const HomeProjects = () => {
                                     {item.description}
                                 </p>
                                 <div>
-                                    <Button text={'Visitez'} />
+                                    <LinkButton text={'Visitez'}
+                                        link={item.link}
+                                        target="_blank" />
                                 </div>
                             </section>
                         </article>
