@@ -56,6 +56,30 @@
         font-size: 2vh;
         color: var(--secondaryColor);
       }
+      a{
+        margin-right: auto;
+      }
+      div{
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        article{
+          width: 60px;
+          height: 60px;
+          // background-color: var(--primaryColor);
+          background-color: #efefef;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          img{
+            width: 60%;
+            object-fit: contain;
+            height: 60%;
+          }
+        }
+        
+      }
     }
   }
   

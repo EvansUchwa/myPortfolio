@@ -3,14 +3,14 @@ import { SectionTitle } from "../../uikits/other";
 
 const HomeSkills = () => {
     const techno = [
-        { name: 'Html5', img: 'html.png' },
-        { name: 'Css3', img: 'css.png' },
-        { name: 'Sass/Scss', img: 'sass.png' },
-        { name: 'Javascript', img: 'js.png' },
-        { name: 'React', img: 'react.png' },
-        { name: 'Next Js', img: 'next.png' },
-        { name: 'Node Js', img: 'node.png' },
-        { name: 'Mongo Db', img: 'mongo.png' },
+        { name: 'Html5', img: 'html.webp' },
+        { name: 'Css3', img: 'css.webp' },
+        { name: 'Sass/Scss', img: 'sass.webp' },
+        { name: 'Javascript', img: 'js.webp' },
+        { name: 'React', img: 'react.webp' },
+        { name: 'Next Js', img: 'next.webp' },
+        { name: 'Node Js', img: 'node.webp' },
+        { name: 'Mongo Db', img: 'mongo.webp' },
         { name: 'MySql', img: 'mysql.webp' },
         { name: 'Vercel', img: 'vercel.webp' },
         { name: 'Heroku', img: 'heroku.webp' },
